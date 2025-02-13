@@ -35,15 +35,58 @@ This project aims to:
 
 ## Dataset Description
 
-The dataset used in this project is "Factors Affecting University Student Grades," available on Kaggle (or specify the source if different). It contains the following columns:                                
-*   **Student Demographics and Background:** Age, Gender, Parental\_Education, Family\_Income
+This document provides a description of the columns present in the "Factors Affecting University Student Grades" dataset.  The dataset aims to capture various factors that might influence a student's academic performance.
 
-*   **Academic Factors:** Previous\_Grades, Attendance, Class\_Participation, Study\_Hours, Major, School\_Type, Financial\_Status, Parental\_Involvement, Educational\_Resources, Motivation, Self\_Esteem, Stress\_Levels, School\_Environment, Professor\_Quality, Class\_Size, Extracurricular\_Activities, Learning\_Style, Tutoring, Mentoring
-                                 
-*   **Lifestyle and Personal Factors:** Sleep\_Patterns, Nutrition, Physical\_Activity, Screen\_Time, Educational\_Tech\_Use, Peer\_Group, Bullying, Study\_Space, Lack\_of\_Interest, Time\_Wasted\_on\_Social\_Media, Sports\_Participation
+### Student Demographics and Background
 
-*   **Target Variable:** Grades (A, B, C)
-                                                                     
+*   **Age:**  The age of the student. (Numerical)
+*   **Gender:** The gender of the student (Male/Female). (Categorical)
+*   **Parental_Education:** The highest level of education attained by the student's parents (e.g., High School, Some College, College, Graduate). (Categorical)
+*   **Family_Income:** The annual family income. (Numerical/Categorical - could be treated as categorical if ranges are used).  Contains one "Unknown" value.
+*   **Previous_Grades:** The student's grades in previous academic years (e.g., A, B, C). (Categorical)
+
+### Academic Factors
+
+*   **Attendance:** The student's attendance rate. (Numerical - likely a percentage)
+*   **Class_Participation:** The level of the student's participation in class (e.g., High, Medium, Low). (Categorical)
+*   **Study_Hours:** The number of hours the student studies per week. (Numerical)
+*   **Major:** The student's major or field of study (e.g., Business, Science, Engineering). (Categorical)
+*   **School_Type:** The type of school the student attends (e.g., Public, Private). (Categorical)
+*   **Financial_Status:** The student's financial status (e.g., Low, Medium, High). (Categorical)
+*   **Parental_Involvement:** The level of parental involvement in the student's education (e.g., High, Medium, Low). (Categorical)
+*   **Educational_Resources:**  Availability of educational resources for the student (Yes/No). (Categorical)
+*   **Motivation:** The student's motivation level (e.g., High, Medium, Low). (Categorical)
+*   **Self_Esteem:** The student's self-esteem level (e.g., High, Medium, Low). (Categorical)
+*   **Stress_Levels:** The student's stress levels (e.g., High, Medium, Low). (Categorical)
+*   **School_Environment:** The quality of the school environment (e.g., Positive, Negative, Neutral). (Categorical)
+*   **Professor_Quality:** The perceived quality of the professors (e.g., High, Medium, Low). (Categorical)
+*   **Class_Size:** The size of the classes the student attends. (Numerical)
+*   **Extracurricular_Activities:** Participation in extracurricular activities (Yes/No). (Categorical)
+*   **Learning_Style:** The student's preferred learning style (e.g., Visual, Auditory, Kinesthetic). (Categorical)
+*   **Tutoring:** Whether the student receives tutoring (Yes/No). (Categorical)
+*   **Mentoring:** Whether the student has a mentor (Yes/No). (Categorical)
+
+### Lifestyle and Personal Factors
+
+*   **Sleep_Patterns:** The student's sleep patterns (e.g., Adequate, Inadequate). (Categorical - this needs further clarification on the actual values)
+*   **Nutrition:** The student's nutrition habits (e.g., Healthy, Unhealthy, Balanced). (Categorical)
+*   **Physical_Activity:** The student's level of physical activity (e.g., High, Medium, Low). (Categorical)
+*   **Screen_Time:** The amount of time the student spends on screens. (Numerical)
+*   **Educational_Tech_Use:** The student's use of educational technology (Yes/No). (Categorical)
+*   **Peer_Group:** The influence of the student's peer group (e.g., Positive, Negative, Neutral). (Categorical)
+*   **Bullying:**  Experiences with bullying (Yes/No). (Categorical)
+*   **Study_Space:** The quality of the student's study space (Yes/No). (Categorical)
+*   **Lack_of_Interest:** Level of lack of interest in studies. (Numerical/Categorical - needs more detail)
+*   **Time_Wasted_on_Social_Media:** Time wasted on social media. (Numerical)
+*   **Sports_Participation:** Participation in sports (Yes/No). (Categorical)
+
+### Target Variable
+
+*   **Grades:** The student's grades (e.g., A, B, C, etc.). This is the target variable that we want to predict or analyze. (Categorical/Numerical - depending on how grades are represented)
+
+
+**Note:**  Some categorical variables may need to be converted into numerical representations (e.g., one-hot encoding) before being used in machine learning models.  Also, the "Unknown" value in `Family_Income` should be handled appropriately (e.g., imputation or removal).  The specific categories within some columns (like `Sleep_Patterns`, `Lack_of_Interest`) would benefit from further clarification in the dataset documentation.                                                
+
 ---
 
 ## Data Preprocessing
