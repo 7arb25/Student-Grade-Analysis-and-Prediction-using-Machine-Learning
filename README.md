@@ -1,5 +1,6 @@
 # Student Grade Analysis and Prediction using Machine Learning
 
+![img alt](https://github.com/7arb25/student-performance-analysis/blob/9665aef7c72dfdaac73086ef19fb6b1dce5fc326/Imgs/pic.jpg)
 This project analyzes a dataset of university student grades and associated factors to understand the key influences on academic performance and build a predictive model for student grades.  The analysis is conducted for the InvestInMinds Foundation, a non-profit organization dedicated to supporting and educating students.
 
 ---
@@ -93,6 +94,14 @@ This document provides a description of the columns present in the "Factors Affe
                                                                      
 The following preprocessing steps were performed:
 1. **Missing Value Imputation:** Numerical features were imputed using KNNImputer, and categorical features were imputed using SimpleImputer (most frequent value).
+
+#### Heatmap Before
+
+![img alt](https://github.com/7arb25/student-performance-analysis/blob/74e0ec7d24ff6c15d2cb4bcafbfebbbe1c7d0d4d/Imgs/Missing%20vals%20heatmap.jpg)
+
+#### Heatmap After
+![img](https://github.com/7arb25/student-performance-analysis/blob/9665aef7c72dfdaac73086ef19fb6b1dce5fc326/Imgs/full%20heatmap2.jpg)
+
 2. **Ordinal Encoding:** The target variable "Grades" was ordinally encoded to reflect the inherent order (C < B < A).
 3. **One-Hot Encoding:** Categorical features (for the model) were one-hot encoded using `pd.get_dummies()`.
 
@@ -105,6 +114,26 @@ EDA was conducted to understand the relationships between variables and identify
 *   **Distribution of Grades:** A count plot showed the overall distribution of grades.
 *   **Impact of Factors on Grades:** Grouped bar charts visualized the relationship between various factors (e.g., parental education, tutoring, school environment) and student grads.
 *   **Correlation Matrix:** A heatmap displayed the correlation between numerical features.
+
+#### Detailed Description 
+
+1. **Tutoring and Grade Distribution:**
+
+   -
+      * Yes" Tutoring: Among students who received tutoring, the most common grade is "B," followed by "A," and then "C."
+      * "No" Tutoring: Among students who did not receive tutoring, the distribution is slightly different. "B" is still the most frequent, but the number of "A" grades is notably lower, and the number of "C" grades is slightly higher compared to the "Yes" tutoring group.
+
+  - Impact of Tutoring:
+      * Increased "A" Grades: A higher proportion of students who received tutoring achieved an "A" grade compared to those who did not. This suggests that tutoring might have a positive impact on achieving higher grades.
+      * Reduced "C" Grades: There's a slight decrease in the proportion of "C" grades among students who received tutoring.
+      *  "B" Grades Remain High: While tutoring seems to have a positive influence on "A" grades, the number of "B" grades remains relatively high in both groups. This could indicate that other factors also play a significant role in achieving a "B" grade.
+  - Potential Implications:
+      * Tutoring Effectiveness: The data suggests that tutoring could be an effective intervention for improving student grades, particularly for those aiming for an "A.”
+  - Program Evaluation: This data supports the idea that tutoring programs can be beneficial. InvestInMinds could use this information to evaluate and potentially expand their tutoring initiatives.
+  - Targeted Support: The findings suggest that tutoring might be particularly helpful for students aiming for higher grades ("A").
+  - Further Research: InvestInMinds could conduct more rigorous research (potentially including randomized controlled trials) to establish the causal impact of tutoring and to identify other factors that contribute to student success. They might also want to explore why the "B" grade is so prevalent even with tutoring, which could point to areas for additional intervention.
+
+--- 
 
 
 ---
