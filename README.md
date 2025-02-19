@@ -117,9 +117,10 @@ EDA was conducted to understand the relationships between variables and identify
 
 #### Detailed Description 
 
-1. **Tutoring and Grade Distribution:**
+![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/tutoring_grads.jpg)
+  - **Tutoring and Grade Distribution:**
 
-   -
+
       * Yes" Tutoring: Among students who received tutoring, the most common grade is "B," followed by "A," and then "C."
       * "No" Tutoring: Among students who did not receive tutoring, the distribution is slightly different. "B" is still the most frequent, but the number of "A" grades is notably lower, and the number of "C" grades is slightly higher compared to the "Yes" tutoring group.
 
@@ -134,6 +135,25 @@ EDA was conducted to understand the relationships between variables and identify
   - Further Research: InvestInMinds could conduct more rigorous research (potentially including randomized controlled trials) to establish the causal impact of tutoring and to identify other factors that contribute to student success. They might also want to explore why the "B" grade is so prevalent even with tutoring, which could point to areas for additional intervention.
 
 --- 
+![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/mentoring_grads.jpg)
+
+---
+![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/parential_edication_grade.jpg)
+
+---
+![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/school_type_grade.jpg)
+
+---
+
+![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/financial_status_grade.jpg)
+
+---
+
+![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/educational_resourses_grade.jpg)
+
+---
+
+![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/school_environment_grade.jpg)
 
 
 ---
