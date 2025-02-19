@@ -137,8 +137,43 @@ EDA was conducted to understand the relationships between variables and identify
 --- 
 ![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/mentoring_grads.jpg)
 
+1. **Grade Distribution by Mentoring Status:**
+
+    - "Yes" Mentoring: Among students who had mentors, the most frequent grade is "B," followed by "A," and then "C."
+    - "No" Mentoring: The distribution is similar for students without mentors, with "B" being the most common, followed by "A," and then "C."
+
+2. **Impact of Mentoring:**
+
+    - **Slightly Higher "A"s with Mentoring:** A slightly higher number of students who had mentors achieved an "A" grade compared to those who didn't have mentors. This suggests a potential positive influence of mentoring on achieving higher grades.
+    - **Similar "B" and "C" Trends:** The counts of "B" and "C" grades are relatively similar between the two groups (mentored vs. not mentored).
+
+3. **Potential Implications:
+Mentoring's Potential Benefit:** The data hints at a possible positive relationship between mentoring and achieving higher grades, particularly "A"s.
+
+**In summary,** the chart suggests a possible positive association between mentoring and higher grades, but further research is needed to confirm a causal relationship and rule out the influence of other factors.  The information can be valuable for InvestInMinds in evaluating and refining their programs.
+
 ---
 ![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/parential_edication_grade.jpg)
+
+1. **Grade Distribution Across Parental Education Levels:**
+
+    - `"College":` Among students whose parents' highest education is "College," the most frequent grade is "B," followed by "A," and then "C."
+    - `"Some College":` The trend is similar for students whose parents attended "Some College," with "B" being the most frequent, followed by "A," and then "C." However, the overall count in this category is the highest.
+    - `"High School":` For students whose parents' highest education is "High School," the distribution is slightly different. The count of "B" grades is still the highest, but the count of "C" grades is relatively higher compared to the "College" and "Some College" categories.
+    - `"Graduate":` Students whose parents are "Graduates" show a similar pattern to the "College" and "Some College" groups, with "B" being the most common, followed by "A," and then "C."
+
+2. **Impact of Parental Education on Grades:**
+
+    - `Higher Parental Education, Potentially Higher "A"s:` There is a tendency, though not absolute, for the proportion of "A" grades to be slightly higher in the "College," "Some College," and "Graduate" categories compared to the "High School" category. This suggests that higher parental education might be associated with a slightly increased likelihood of students achieving higher grades.
+    - `"B" Grade Consistency:` The "B" grade remains the most frequent across all parental education levels.
+    - `"C" Grades and Lower Parental Education:` The "High School" category shows a slightly higher proportion of "C" grades compared to the other categories, suggesting that students whose parents have a high school education might be slightly more likely to receive lower grades.
+
+3. **Potential Implications:**
+
+    - `Parental Education as a Factor:` The data hints at parental education being a potential factor influencing student grades.
+
+**Targeted Interventions:** The data suggests that students whose parents have lower levels of education might benefit from additional support and resources.
+**Holistic Approach:** InvestInMinds should consider a holistic approach that addresses multiple factors, recognizing that parental education is just one piece of the puzzle.
 
 ---
 ![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/school_type_grade.jpg)
