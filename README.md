@@ -252,6 +252,59 @@ Mentoring's Potential Benefit:** The data hints at a possible positive relations
 
 A Random Forest Classifier was trained to predict student grades. The model was evaluated using accuracy, classification report (precision, recall, F1-score), and a confusion matrix. Feature importance was also analyzed and visualized.
 
+#### model coding
+
+
+#### feature importance 
+
+![img](https://github.com/7arb25/student-performance-analysis/blob/2e39fb9390945833314dc1ec40b1258ecd1afc9e/Imgs/important%20features.jpg)
+
+1. **Feature Importance Ranking:**
+
+    - `Class_Size` is the most important feature, having the longest bar. This suggests that the size of the class has the strongest influence on the model's predictions (student grades).
+    - `Attendance` is the second most important feature, indicating a strong correlation between attendance and grades.
+    - `Study_Hours` is the third most important feature, which aligns with common expectations about academic success.
+    - `Screen_Time` and Sleep_Patterns also appear to be significant factors.
+    - `Time_Wasted_on_Social_Media` has a moderate level of importance.
+Age shows a relatively lower importance compared to the top features.
+    - `Stress_Levels_Low`, `Parental_Involvement_High`, and `Professor_Quality_Low` have the lowest importance among the top 10, but still contribute to the model's predictive power.
+
+2. **Interpretation:**
+
+    - The model suggests that factors related to academic engagement (`Class_Size`, `Attendance`, `Study_Hours`) and lifestyle (`Screen_Time`, `Sleep_Patterns`) are the most influential predictors of student grades.
+    - While `Age`, `Stress Levels`, `Parental Involvement`, and `Professor Quality` make a contribution, their impact is comparatively smaller.
+
+#### model limeitation
+
+![img](https://github.com/7arb25/student-performance-analysis/blob/2e39fb9390945833314dc1ec40b1258ecd1afc9e/Imgs/confusion%20matrix_.jpg)
+
+1. **Accuracy:**
+
+    - Overall accuracy is calculated as the sum of correctly classified instances divided by the total number of instances.
+    -    (87 + 595 + 59) / (87 + 441 + 55 + 125 + 595 + 68 + 89 + 494 + 59) = 741 / 2013 ≈ 0.368 or 36.8%
+    -    This means the model is only accurate about 36.8% of the time, which is not very good.
+
+2. **Precision:**
+
+    - Precision for each class measures how many of the instances predicted as that class were actually correct.
+    - Precision for A: 59 / (55 + 68 + 59) = 59 / 182 ≈ 0.324 (32.4%)
+    - Precision for B: 595 / (441 + 595 + 494) = 595 / 1530 ≈ 0.389 (38.9%)
+    - Precision for C: 87 / (87 + 125 + 89) = 87 / 301 ≈ 0.289 (28.9%)
+
+3. **Recall (Sensitivity or True Positive Rate):**
+
+    - Recall for each class measures how many of the actual instances of that class were correctly predicted.
+    - Recall for A: 59 / (55 + 68 + 59) = 59 / 182 ≈ 0.324 (32.4%)
+    - Recall for B: 595 / (441 + 595 + 494) = 595 / 1530 ≈ 0.389 (38.9%)
+    - Recall for C: 87 / (87 + 125 + 89) = 87 / 301 ≈ 0.289 (28.9%)
+
+4. **F1-Score:**
+
+    - The F1-score is the harmonic mean of precision and recall. It balances both metrics.
+    - F1-Score for A: (2 * 0.324 * 0.324) / (0.324 + 0.324) ≈ 0.324
+    - F1-Score for B: (2 * 0.389 * 0.389) / (0.389 + 0.389) ≈ 0.389
+    - F1-Score for C: (2 * 0.289 * 0.289) / (0.289 + 0.289) ≈ 0.289
+
 ---
 
 ## Results and Conclusions          
