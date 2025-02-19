@@ -209,10 +209,41 @@ Mentoring's Potential Benefit:** The data hints at a possible positive relations
 
 ![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/educational_resourses_grade.jpg)
 
+1. **Grade Distribution Across Resource Availability:**
+
+    - `"Yes" Resources:` Among students with access to educational resources, the most frequent grade is "B," followed by "A," and then "C."
+    - `"No" Resources:` The trend is similar for students without access to resources, with "B" being the most common, followed by "A," and then "C."
+
+2. **Impact of Educational Resources on Grades:**
+
+    - `Slightly Higher "A"s with Resources:` There appears to be a slightly higher proportion of "A" grades among students who have access to educational resources compared to those who don't.
+    - `Similar "B" and "C" Trends:` The counts of "B" and "C" grades are relatively similar between the two groups (resource access vs. no access).
+
+3. **Potential Implications:**
+
+    - `Resources Might Have a Positive Influence:` The data hints at a possible positive relationship between access to educational resources and achieving higher grades, particularly "A"s.
+
+**Resource Provision as a Potential Strategy:** The data suggests that providing educational resources could be a beneficial strategy for improving student outcomes.
+**Targeted Resource Allocation:** InvestInMinds might consider focusing on providing resources to students who lack access, particularly those who are aiming for higher grades.
+
 ---
 
 ![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/school_environment_grade.jpg)
 
+1. **Grade Distribution Across School Environments:**
+
+    - `"Negative":` Among students in a negative school environment, the most frequent grade is "B," followed by "A," and then "C."
+    - `"Positive":` The trend is similar for students in a positive school environment, with "B" being the most common, followed by "A," and then "C."
+    - `"Neutral":` Students in a neutral school environment also follow the same pattern, with "B" being the most frequent, followed by "A," and then "C."
+
+2. **Impact of School Environment on Grades:**
+
+    - `Relatively Consistent Patterns:` The distribution of grades across the three school environment categories is relatively consistent. All three groups show a similar pattern of having the highest count of "B" grades, followed by "A" and then "C."
+    - `Potential Slight Variations:` While the overall patterns are similar, there might be slight variations in the exact proportions of each grade level within each school environment group. However, these differences don't appear to be very large at first glance.
+
+3. **Potential Implications:**
+
+    - `School Environment Might Not Be the Dominant Factor:` The data suggests that the school environment alone might not be the most influential factor in determining student grades, as the distributions are relatively similar across all three categories.
 
 ---
 
