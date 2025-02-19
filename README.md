@@ -178,9 +178,32 @@ Mentoring's Potential Benefit:** The data hints at a possible positive relations
 ---
 ![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/school_type_grade.jpg)
 
+1. **Grade Distribution Across School Types:**
+   
+    - `"Private":` Among students attending private schools, the most frequent grade is "B," followed by "A," and then "C."
+    - `"Public":` The distribution is similar for students attending public schools, with "B" being the most common, followed by "A," and then "C."
+
+2. **Impact of School Type on Grades:**
+
+
+    - `Similar Trends:` The overall patterns of grade distribution are quite similar between private and public schools. Both show a higher concentration of "B" grades, followed by "A" and then "C."
+    - `Slight Variations:` There are some minor variations in the heights of the bars, suggesting slightly different proportions of grades between the two school types. However, these differences don't appear to be substantial at first glance.
+
+3. **Potential Implications:**
+
+    - `School Type Might Not Be the Dominant Factor:` The data suggests that the type of school (private or public) might not be the most influential factor in determining student grades, as the distributions are relatively similar.
+
+**In summary,** the chart suggests that school type alone might not be a strong predictor of student grades, and other factors are likely playing a more significant role.  InvestInMinds should consider this when developing strategies to support student success
+
 ---
 
 ![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/financial_status_grade.jpg)
+
+1. **Holistic Understanding:** InvestInMinds should consider a holistic understanding of student success, recognizing that financial status is just one factor among many.
+2. **Focus on Multifaceted Support:** Given the relatively consistent grade distributions, InvestInMinds might want to focus on providing multifaceted support that addresses various needs, such as academic resources, mentoring, tutoring, and socio-emotional support, rather than solely focusing on financial assistance.
+3. **Further Research:** InvestInMinds could conduct further research to explore how financial status interacts with other factors to affect student grades. They might also want to investigate the specific challenges faced by students from different financial backgrounds and how these challenges can be addressed through targeted interventions.
+
+**In summary,** the chart suggests that financial status alone might not be a strong predictor of student grades, and other factors are likely playing a more significant role.  InvestInMinds should consider this when developing strategies to support student success. They should focus on a wide range of support mechanisms and conduct further research to gain a deeper understanding of the complex factors influencing student outcomes.
 
 ---
 
