@@ -97,9 +97,57 @@ The following preprocessing steps were performed:
 
 #### Heatmap Before
 
+``` python
+missing_data = df.isnull()
+
+# 4. Create the heatmap
+plt.figure(figsize=(10, 8)) 
+sns.heatmap(missing_data, cbar=False, cmap='viridis')
+plt.title('Heatmap of Missing Values')
+plt.xlabel('Columns')
+plt.ylabel('Rows')
+plt.show()
+```
+
 ![img alt](https://github.com/7arb25/student-performance-analysis/blob/74e0ec7d24ff6c15d2cb4bcafbfebbbe1c7d0d4d/Imgs/Missing%20vals%20heatmap.jpg)
 
+``` python
+from sklearn.impute import KNNImputer,SimpleImputer
+numerical_cols = df.select_dtypes(include=np.number).columns
+categorical_cols = df.select_dtypes(exclude=np.number).columns
+
+numerical_df = df[numerical_cols]
+categorical_df = df[categorical_cols]
+
+# 3. Impute numerical features using KNNImputer
+knn_imputer = KNNImputer(n_neighbors=5)  
+numerical_imputed = knn_imputer.fit_transform(numerical_df)
+numerical_imputed_df = pd.DataFrame(numerical_imputed, columns=numerical_cols) 
+
+
+mode_imputer = SimpleImputer(strategy='most_frequent')
+categorical_imputed = mode_imputer.fit_transform(categorical_df)
+categorical_imputed_df = pd.DataFrame(categorical_imputed, columns=categorical_cols)
+
+```
+
 #### Heatmap After
+
+``` python
+
+import missingno as msno
+
+msno.matrix(df) 
+plt.title('Missingno Matrix')
+plt.show()
+################
+msno.bar(df) 
+plt.title('Missingno Bar Chart')
+plt.show()
+
+```
+
+
 ![img](https://github.com/7arb25/student-performance-analysis/blob/9665aef7c72dfdaac73086ef19fb6b1dce5fc326/Imgs/full%20heatmap2.jpg)
 
 2. **Ordinal Encoding:** The target variable "Grades" was ordinally encoded to reflect the inherent order (C < B < A).
@@ -116,6 +164,24 @@ EDA was conducted to understand the relationships between variables and identify
 *   **Correlation Matrix:** A heatmap displayed the correlation between numerical features.
 
 #### Detailed Description 
+
+``` python
+factors_to_analyze = ['Parental_Education', 'Study_Hours', 'School_Type', 'Financial_Status', 'Tutoring', 'Mentoring', 'Educational_Resources', 'School_Environment', 'Time_Wasted_on_Social_Media']
+
+for factor in factors_to_analyze:
+
+    if factor in categorical_cols: #Use countplot for categorical variables
+      sns.countplot(x=factor, hue='Grades', data=df)
+      plt.title(f'Impact of {factor} on Grades')
+      plt.xticks(rotation=45, ha='right') # Rotate x-axis labels if needed
+      plt.tight_layout() # Adjust layout to prevent labels from overlapping
+      plt.show()
+    elif factor in numerical_cols: #Use barplot for numerical variables
+      sns.barplot(x='Grades', y=factor, data=df)
+      plt.title(f'Impact of {factor} on Grades')
+      plt.show()
+
+```
 
 ![img](https://github.com/7arb25/student-performance-analysis/blob/982c28af3468eae0b062388b72d6a811a61118e4/Imgs/tutoring_grads.jpg)
   - **Tutoring and Grade Distribution:**
@@ -256,6 +322,52 @@ A Random Forest Classifier was trained to predict student grades. The model was 
 
 
 #### feature importance 
+
+``` python
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score,confusion_matrix, classification_report
+X = pd.get_dummies(X, columns=X.select_dtypes(exclude=np.number).columns)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) 
+
+
+rf_model = RandomForestClassifier(random_state=42)
+rf_model.fit(X_train, y_train)
+
+
+y_pred = rf_model.predict(X_test)
+
+
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuracy: {accuracy}")
+print(classification_report(y_test, y_pred))
+
+
+feature_importances = rf_model.feature_importances_
+feature_names = X.columns
+importance_df = pd.DataFrame({'Feature': feature_names, 'Importance': feature_importances})
+importance_df = importance_df.sort_values(by='Importance', ascending=False)
+
+
+plt.figure(figsize=(10, 6))
+sns.barplot(x='Importance', y='Feature', data=importance_df.head(10))  # Show top 10 features
+plt.title('Top 10 Important Features')
+plt.show()
+
+
+print(importance_df.head(10))
+
+cm = confusion_matrix(y_test, y_pred)
+plt.figure(figsize=(8, 6))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
+            xticklabels=categories, yticklabels=categories)  # Use original grade labels
+plt.title('Confusion Matrix')
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.show()
+
+```
+
 
 ![img](https://github.com/7arb25/student-performance-analysis/blob/2e39fb9390945833314dc1ec40b1258ecd1afc9e/Imgs/important%20features.jpg)
 
