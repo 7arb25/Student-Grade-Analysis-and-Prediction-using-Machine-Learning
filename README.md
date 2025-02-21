@@ -449,8 +449,8 @@ Age shows a relatively lower importance compared to the top features.
 
 ## Installation
 
-1.  Clone the repository: `git clone https://github.com/your-username/student-grade-analysis.git`
-2.  Navigate to the project directory: `cd student-grade-analysis`
+1.  Clone the repository: `git clone https://github.com/7arb25/Student-Grade-Analysis-and-Prediction-using-Machine-Learning.git`
+2.  Navigate to the project directory: `cd Student Grade Analysis and Prediction using Machine Learning`
 3.  Create a virtual environment (recommended): `python3 -m venv .venv`
 4.  Activate the virtual environment:
    *   macOS/Linux: `source .venv/bin/activate`
@@ -475,6 +475,4 @@ Contributions are welcome! Please open an issue or submit a pull request.
                           
 ## License
                           
-[Creative Commons 4.0 License Share Alike](https://creativecommons.org/)
-
-## Repository Structure
+Abdelrahman G. A. Harb i developed it for the benefit of InvestInMinds Foundation Under The License Of [Creative Commons 4.0 License Share Alike](https://creativecommons.org/)
