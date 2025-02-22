@@ -1,6 +1,9 @@
 # Student Grade Analysis and Prediction using Machine Learning
 
 ![img alt](https://github.com/7arb25/student-performance-analysis/blob/9665aef7c72dfdaac73086ef19fb6b1dce5fc326/Imgs/pic.jpg)
+
+---
+
 This project analyzes a dataset of university student grades and associated factors to understand the key influences on academic performance and build a predictive model for student grades.  The analysis is conducted for the InvestInMinds Foundation, a non-profit organization dedicated to supporting and educating students.
 
 ---
